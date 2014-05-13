@@ -1,0 +1,22 @@
+﻿NTCases/ISNCSCI NT Case 16
+NTCases/ISNCSCI NT Case 22
+
+
+--- Important ----------------
+[EE: 2013-Nov-29]
+Associated to changeset 4768
+The cases
+
+	RevisionsToTheLogic/motor-Katie Collins-Nov-2013
+	RevisionsToTheLogic/motor-Steve Kirshblum-20-Nov-2013
+
+generated a major refactor of the logic.  Although I do not completely agree with the logic followed by the 
+experts, many e-mails went back and forth ending in the motor level continum to be broken if sensory levels are
+not normal on key muscles.
+Do not forget about this when someone raises the question again o how to handle these two forms.
+
+The following pre-existing forms, which had been reviewed by the experts, were affected:
+
+	Fixes/Error calculating motor scores-1
+	NtCases/ISNCSCI NT Case 7
+	NtCases/ISNCSCI NT Case 8

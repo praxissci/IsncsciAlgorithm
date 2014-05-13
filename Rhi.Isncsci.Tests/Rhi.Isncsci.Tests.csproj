@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A354D889-1BE4-4439-9FD9-E4DB9E470B7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rhi.Isncsci.Tests</RootNamespace>
+    <AssemblyName>Rhi.Isncsci.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\AlgorithmTests.cs" />
+    <Compile Include="NeurologyFormLoader.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Rhi.Isncsci.Tests-License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-e.xml" />
+    <Content Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-b.xml" />
+    <Content Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-c.xml" />
+    <Content Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-a.xml" />
+    <Content Include="Resources\IsncsciTestCases\CasesNeedingRevisions.txt" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\5 star on a motor does not rise flags.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\All 0 except for C2.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\All 0 with 2 for C2 and 5 for right motor T1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect-1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect-2.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect-3.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect Reeves 1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect Reeves 2.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Defect Waring 1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Error calculating motor scores-1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Impairment not due to SCI-1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Motor ZPP defect 1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\Motor ZPP defect 2.xml" />
+    <Content Include="Resources\IsncsciTestCases\Fixes\ZPP of S1 for motor with all values set to 5 but sensory L1 L4.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case A.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case B.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case C.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case D.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case E.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 1.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 2.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 3.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 4.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 5.xml" />
+    <Content Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 6.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 31.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 10.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 11.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 12.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 13.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 14.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 15.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 16.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 17.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 18.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 19.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 20.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 21.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 22.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 23.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 24.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 25.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 26.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 27.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 29.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 28.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 3.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 30.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 4.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 5.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 6.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 7.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 8.xml" />
+    <Content Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 9.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\ASIA E with 5 stars.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case all zero.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case impairment not due to sci-1.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-1.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-10.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-11.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-12.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-2.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-3.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-4.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-5.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-6.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-7.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-8.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Edge case-9.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Reeves 1.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Reeves 2.xml" />
+    <Content Include="Resources\IsncsciTestCases\OriginalCases\Use exclamation and asterisk on same form.xml" />
+    <Content Include="Resources\IsncsciTestCases\RevisionsToTheLogic\motor-Katie Collins-Nov-2013.xml" />
+    <Content Include="Resources\IsncsciTestCases\RevisionsToTheLogic\motor-Steve Kirshblum-20-Nov-2013.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-a.pdf" />
+    <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-b.pdf" />
+    <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-c.pdf" />
+    <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-e.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\5 star on a motor does not rise flags.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\All 0 except for C2.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\All 0 with 2 for C2 and 5 for right motor T1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect-1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect-2.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect-3.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect Reeves 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect Reeves 2.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Defect Waring 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Error calculating motor scores-1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Impairment not due to SCI-1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Motor ZPP defect 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\Motor ZPP defect 2.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\ZPP of S1 for motor with all values set to 5 but sensory L1 L4.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case A.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case B.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case C.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case D.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Case E.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 2.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 3.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 4.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 5.pdf" />
+    <None Include="Resources\IsncsciTestCases\Instep\InStep-Module 5-Sample Case 6.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 10.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 11.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 12.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 13.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 14.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 15.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 16.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 17.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 18.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 19.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 2.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 20.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 21.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 22.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 23.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 24.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 25.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 26.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 27.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 28.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 29.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 3.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 30.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 31.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 4.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 5.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 6.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 7.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 8.pdf" />
+    <None Include="Resources\IsncsciTestCases\NtCases\ISNCSCI NT Case 9.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\ASIA E with 5 stars.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case all zero.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case impairment not due to sci-1.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-1.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-10.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-11.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-12.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-2.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-3.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-4.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-5.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-6.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-7.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-8.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Edge case-9.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Reeves 1.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Reeves 2.pdf" />
+    <None Include="Resources\IsncsciTestCases\OriginalCases\Use exclamation and asterisk on same form.pdf" />
+    <None Include="Resources\IsncsciTestCases\RevisionsToTheLogic\motor-Katie Collins-Nov-2013.pdf" />
+    <None Include="Resources\IsncsciTestCases\RevisionsToTheLogic\motor-Steve Kirshblum-20-Nov-2013.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rhi.Isncsci\Rhi.Isncsci.csproj">
+      <Project>{cfd110c1-ce77-40fd-932b-3ef70f8f56ee}</Project>
+      <Name>Rhi.Isncsci</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

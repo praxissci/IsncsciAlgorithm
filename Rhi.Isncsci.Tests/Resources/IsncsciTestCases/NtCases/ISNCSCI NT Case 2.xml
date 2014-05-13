@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeurologyFormTotalsModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NeurologyForm>
+    <Id>0</Id>
+    <ExamDate>0001-01-01T00:00:00</ExamDate>
+    <AnalContraction>No</AnalContraction>
+    <AnalSensation>Yes</AnalSensation>
+    <RightLowestNonKeyMuscleWithMotorFunction>0</RightLowestNonKeyMuscleWithMotorFunction>
+    <LeftLowestNonKeyMuscleWithMotorFunction>0</LeftLowestNonKeyMuscleWithMotorFunction>
+    <Comments>
+      ISNCSCI NT Case 2
+      NT 2 degree ++ spasms and pain
+    </Comments>
+    <Dermatomes>
+      <Dermatome name="C2">
+        <RightTouch>2</RightTouch>
+        <LeftTouch>2</LeftTouch>
+        <RightPrick>2</RightPrick>
+        <LeftPrick>2</LeftPrick>
+      </Dermatome>
+      <Dermatome name="C3">
+        <RightTouch>2</RightTouch>
+        <LeftTouch>2</LeftTouch>
+        <LeftPrick>2</LeftPrick>
+        <RightPrick>2</RightPrick>
+      </Dermatome>
+      <Dermatome name="C4">
+        <RightTouch>2</RightTouch>
+        <LeftTouch>2</LeftTouch>
+        <RightPrick>2</RightPrick>
+        <LeftPrick>2</LeftPrick>
+      </Dermatome>
+      <Dermatome name="C5">
+        <RightMotor>5</RightMotor>
+        <LeftMotor>5</LeftMotor>
+        <RightTouch>2</RightTouch>
+        <LeftTouch>2</LeftTouch>
+        <RightPrick>2</RightPrick>
+        <LeftPrick>2</LeftPrick>
+      </Dermatome>
+      <Dermatome name="C6">
+        <RightMotor>1</RightMotor>
+        <LeftMotor>1</LeftMotor>
+        <RightTouch>1</RightTouch>
+        <LeftTouch>1</LeftTouch>
+        <RightPrick>1</RightPrick>
+        <LeftPrick>0</LeftPrick>
+      </Dermatome>
+      <Dermatome name="C7">
+        <RightMotor>0</RightMotor>
+        <LeftMotor>0</LeftMotor>
+        <RightTouch>1</RightTouch>
+        <LeftTouch>0</LeftTouch>
+        <RightPrick>1</RightPrick>
+        <LeftPrick>0</LeftPrick>
+      </Dermatome>
+      <Dermatome name="C8">
+        <RightMotor>0</RightMotor>
+        <LeftMotor>0</LeftMotor>
+        <RightTouch>1</RightTouch>
+        <LeftTouch>0</LeftTouch>
+        <RightPrick>1</RightPrick>
+        <LeftPrick>0</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T1">
+        <RightMotor>0</RightMotor>
+        <LeftMotor>0</LeftMotor>
+        <RightTouch>1</RightTouch>
+        <LeftTouch>0</LeftTouch>
+        <RightPrick>1</RightPrick>
+        <LeftPrick>0</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T2">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T3">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T4">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T5">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T6">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T7">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T8">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T9">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T10">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T11">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="T12">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="L1">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="L2">
+        <RightMotor>NT</RightMotor>
+        <LeftMotor>NT</LeftMotor>
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="L3">
+        <RightMotor>NT</RightMotor>
+        <LeftMotor>NT</LeftMotor>
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="L4">
+        <RightMotor>NT</RightMotor>
+        <LeftMotor>NT</LeftMotor>
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="L5">
+        <RightMotor>NT</RightMotor>
+        <LeftMotor>NT</LeftMotor>
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="S1">
+        <RightMotor>NT</RightMotor>
+        <LeftMotor>NT</LeftMotor>
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="S2">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="S3">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+      <Dermatome name="S4_5">
+        <RightTouch>NT</RightTouch>
+        <LeftTouch>NT</LeftTouch>
+        <RightPrick>NT</RightPrick>
+        <LeftPrick>NT</LeftPrick>
+      </Dermatome>
+    </Dermatomes>
+  </NeurologyForm>
+  <NeurologyFormTotals>
+    <RightUpperMotorTotal>6</RightUpperMotorTotal>
+    <RightUpperMotorContainsNt>false</RightUpperMotorContainsNt>
+    <LeftUpperMotorTotal>6</LeftUpperMotorTotal>
+    <LeftUpperMotorContainsNt>false</LeftUpperMotorContainsNt>
+    <RightLowerMotorTotal>0</RightLowerMotorTotal>
+    <RightLowerMotorContainsNt>true</RightLowerMotorContainsNt>
+    <LeftLowerMotorTotal>0</LeftLowerMotorTotal>
+    <LeftLowerMotorContainsNt>true</LeftLowerMotorContainsNt>
+    <RightTouchTotal>12</RightTouchTotal>
+    <RightTouchContainsNt>true</RightTouchContainsNt>
+    <LeftTouchTotal>9</LeftTouchTotal>
+    <LeftTouchContainsNt>true</LeftTouchContainsNt>
+    <RightPrickTotal>12</RightPrickTotal>
+    <RightPrickContainsNt>true</RightPrickContainsNt>
+    <LeftPrickTotal>8</LeftPrickTotal>
+    <LeftPrickContainsNt>true</LeftPrickContainsNt>
+    <RightMotorTotal>6</RightMotorTotal>
+    <LeftMotorTotal>6</LeftMotorTotal>
+    <UpperMotorTotal>12</UpperMotorTotal>
+    <LowerMotorTotal>0</LowerMotorTotal>
+    <TouchTotal>21</TouchTotal>
+    <PrickTotal>20</PrickTotal>
+    <RightSensory>C5</RightSensory>
+    <LeftSensory>C5</LeftSensory>
+    <RightMotor>C5</RightMotor>
+    <LeftMotor>C5</LeftMotor>
+    <NeurologicalLevelOfInjury>C5</NeurologicalLevelOfInjury>
+    <RightSensoryZpp>T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,L1,L2,L3,L4,L5,S1,S2,S3</RightSensoryZpp>
+    <LeftSensoryZpp>C6,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,L1,L2,L3,L4,L5,S1,S2,S3</LeftSensoryZpp>
+    <RightMotorZpp>C6,L2,L3,L4,L5,S1</RightMotorZpp>
+    <LeftMotorZpp>C6,L2,L3,L4,L5,S1</LeftMotorZpp>
+    <AsiaImpairmentScale>B, C, D</AsiaImpairmentScale>
+  </NeurologyFormTotals>
+</NeurologyFormTotalsModel>

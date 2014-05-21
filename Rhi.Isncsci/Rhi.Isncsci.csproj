@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Notice.txt" />
     <Content Include="Rhi.Isncsci-License.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -54,6 +54,7 @@
     <Content Include="Notice.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\IsncsciTestCases\Fixes\2015-01-23-Reeves-UTD-Instead-of-C.xml" />
     <Content Include="Rhi.Isncsci.Tests-License.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -162,6 +163,7 @@
     <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-b.pdf" />
     <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-c.pdf" />
     <None Include="Resources\IsncsciTestCases\AsiaSpecialArticle\special-article-e.pdf" />
+    <None Include="Resources\IsncsciTestCases\Fixes\2015-01-23-Reeves-UTD-Instead-of-C.pdf" />
     <None Include="Resources\IsncsciTestCases\Fixes\5 star on a motor does not rise flags.pdf" />
     <None Include="Resources\IsncsciTestCases\Fixes\All 0 except for C2.pdf" />
     <None Include="Resources\IsncsciTestCases\Fixes\All 0 with 2 for C2 and 5 for right motor T1.pdf" />

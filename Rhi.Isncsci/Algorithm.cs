@@ -652,7 +652,7 @@ namespace Rhi.Isncsci
 
             var currentLevel = neurologyForm.GetLevelWithName("S1");
 
-            while (mostRostralRightLevelWithMotor == null && mostRostralLeftLevelWithMotor == null
+            while ((mostRostralRightLevelWithMotor == null || mostRostralLeftLevelWithMotor == null)
                 && currentLevel != null // Could happen if SNL is C1
                 && currentLevel.Ordinal >= totals.MostCaudalNeurologicalLevelOfInjury.Ordinal)
             {

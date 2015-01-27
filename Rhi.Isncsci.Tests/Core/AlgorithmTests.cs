@@ -22,21 +22,26 @@
  * Recommended citation for publications:
  * ISNCSCI Algorithm. (V. 1.0, 2014). http://www.isncscialgorithm.com  The Rick Hansen Institute, Vancouver, British Columbia. (accessed DD/MM/YYYY)
 */
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rhi.Isncsci;
 
-namespace Rhi.Isncsci.Tests
+namespace Rhi.Isncsci.Tests.Core
 {
     [TestClass]
     public class AlgorithmTests
     {
-        private const string PathToTests = @"C:\lalo\TeamFoundationService\IsncsciAlgorithm\master\Rhi.Isncsci.Tests\Resources\IsncsciTestCases\";
-        private const string PathToResources = @"C:\lalo\TeamFoundationService\IsncsciAlgorithm\master\Rhi.Isncsci.Tests\Resources\";
+        private string _pathToTests = @"\IsncsciAlgorithm\Rhi.Isncsci.Tests\Resources\IsncsciTestCases\";
         private const string NotDeterminable = "UTD";
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            _pathToTests = AppDomain.CurrentDomain.SetupInformation.ApplicationBase + @"\..\..\Resources\IsncsciTestCases\";
+        }
 
         /// <summary>
         /// Loads all the xml files in our Test Cases folder and applies the calculations on them.  It will then compare the results to the expected values in the xml file.
@@ -45,16 +50,16 @@ namespace Rhi.Isncsci.Tests
         public void RunAllTests()
         {
             var filePaths = new List<string>();
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"Fixes\", "*.xml"));
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"Instep\", "*.xml"));
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"OriginalCases\", "*.xml"));
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"RevisionsToTheLogic\", "*.xml"));
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"NtCases\", "*.xml"));
-            filePaths.AddRange(Directory.GetFiles(PathToTests + @"AsiaSpecialArticle\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"Fixes\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"Instep\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"OriginalCases\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"RevisionsToTheLogic\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"NtCases\", "*.xml"));
+            filePaths.AddRange(Directory.GetFiles(_pathToTests + @"AsiaSpecialArticle\", "*.xml"));
 
             foreach (var filePath in filePaths)
             {
-                System.Console.WriteLine(filePath);
+                Console.WriteLine(filePath); 
 
                 var xmlDocument = XDocument.Load(filePath);
                 TestForm(NeurologyFormLoader.LoadNeurologyFormFrom(xmlDocument), NeurologyFormLoader.LoadNeurologyFormTotalsFrom(xmlDocument));
@@ -63,8 +68,8 @@ namespace Rhi.Isncsci.Tests
         [TestMethod]
         public void RunSingleTest()
         {
-            const string filePath = PathToTests + @"NtCases/ISNCSCI NT Case 2.xml";
-            System.Console.WriteLine(filePath);
+            var filePath = _pathToTests + @"Fixes/2015-01-23-Reeves-UTD-Instead-of-C.xml";
+            Console.WriteLine(filePath);
 
             var xmlDocument = XDocument.Load(filePath);
             TestForm(NeurologyFormLoader.LoadNeurologyFormFrom(xmlDocument), NeurologyFormLoader.LoadNeurologyFormTotalsFrom(xmlDocument));
@@ -122,7 +127,7 @@ namespace Rhi.Isncsci.Tests
         public void CanGetTotalsSummaryForNtCase2()
         {
             // Arrange
-            const string filePath = PathToTests + @"NtCases/ISNCSCI NT Case 2.xml";
+            var filePath = _pathToTests + @"NtCases/ISNCSCI NT Case 2.xml";
             var xmlDocument = XDocument.Load(filePath);
 
             // Act 
@@ -160,7 +165,7 @@ namespace Rhi.Isncsci.Tests
         public void CanGetTotalsSummaryForNtCase4()
         {
             // Arrange
-            const string filePath = PathToTests + @"NtCases/ISNCSCI NT Case 4.xml";
+            var filePath = _pathToTests + @"NtCases/ISNCSCI NT Case 4.xml";
             var xmlDocument = XDocument.Load(filePath);
 
             // Act 

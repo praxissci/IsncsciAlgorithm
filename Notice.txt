@@ -1,4 +1,4 @@
-﻿Copyright © 2014 Rick Hansen Institute
+﻿Copyright © 2015 Rick Hansen Institute
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -30,9 +30,9 @@ on any modification and that you share a copy of your modification with us at
 isncscialgorithm@rickhanseninstitute.org . Thank you for your cooperation.
 
 Citation to be included in any use (or modification):
-     “(Modified by [X] from) ISNCSCI Algorithm. (V. 1.0, 2014). http://www.isncscialgorithm.com The Rick Hansen Institute, Vancouver, British Columbia.”
+     “(Modified by [X] from) ISNCSCI Algorithm. (V. 1.0.3, 2015). http://www.isncscialgorithm.com The Rick Hansen Institute, Vancouver, British Columbia.”
 
 Recommended citation for publications:
-     ISNCSCI Algorithm. (V. 1.0, 2014). http://www.isncscialgorithm.com The Rick Hansen Institute, Vancouver, British Columbia. (accessed DD/MM/YYYY)
+     ISNCSCI Algorithm. (V. 1.0.3, 2015). http://www.isncscialgorithm.com The Rick Hansen Institute, Vancouver, British Columbia. (accessed YYYY-MM-DD)
 
 

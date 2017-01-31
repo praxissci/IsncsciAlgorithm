@@ -226,7 +226,7 @@
     <UpperMotorTotal>45</UpperMotorTotal>
     <LowerMotorTotal>0</LowerMotorTotal>
     <TouchTotal>50</TouchTotal>
-    <PrickTotal>45</PrickTotal>
+    <PrickTotal>48</PrickTotal>
     <RightSensory>T6</RightSensory>
     <LeftSensory>T6</LeftSensory>
     <RightMotor>T6</RightMotor>

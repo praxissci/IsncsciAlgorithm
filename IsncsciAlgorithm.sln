@@ -1,25 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhi.Isncsci", "Rhi.Isncsci\Rhi.Isncsci.csproj", "{CFD110C1-CE77-40FD-932B-3EF70F8F56EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhi.Isncsci.Tests", "Rhi.Isncsci.Tests\Rhi.Isncsci.Tests.csproj", "{A354D889-1BE4-4439-9FD9-E4DB9E470B7D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhi.Isncsci.Core", "Rhi.Isncsci.Core\Rhi.Isncsci.Core.csproj", "{98729432-48E7-424C-9A0D-3487A4F16B90}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://eddiemachete.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Rhi.Isncsci\\Rhi.Isncsci.csproj
-		SccProjectName1 = Rhi.Isncsci
-		SccLocalPath1 = Rhi.Isncsci
-		SccProjectUniqueName2 = Rhi.Isncsci.Tests\\Rhi.Isncsci.Tests.csproj
-		SccProjectName2 = Rhi.Isncsci.Tests
-		SccLocalPath2 = Rhi.Isncsci.Tests
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -33,8 +23,15 @@ Global
 		{A354D889-1BE4-4439-9FD9-E4DB9E470B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A354D889-1BE4-4439-9FD9-E4DB9E470B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A354D889-1BE4-4439-9FD9-E4DB9E470B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98729432-48E7-424C-9A0D-3487A4F16B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98729432-48E7-424C-9A0D-3487A4F16B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98729432-48E7-424C-9A0D-3487A4F16B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98729432-48E7-424C-9A0D-3487A4F16B90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80A3FAA5-1BCF-4618-9B21-FFE1B06C7D7D}
 	EndGlobalSection
 EndGlobal

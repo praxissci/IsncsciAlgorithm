@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rhi.Isncsci.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.GetTotalsSummaryFor(Rhi.Isncsci.Core.NeurologyForm)">
+            <summary>
+            Produces a summarized version of a NeurologyFormTotals object which can be used to be displayed in an interface or be stored in a database.
+            The values in the summary return will have ranges instead of lists of values.
+            </summary>
+            <param name="neurologyForm">Neurology form that has been populated with the values to be used in the algorithm calculations.</param>
+            <returns>
+            Summarized version of the totals which presents the results as ranges, rather than lists containing every possible value for every field.
+            </returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.GetTotalsSummaryFor(Rhi.Isncsci.Core.NeurologyFormTotals)">
+            <summary>
+            Produces a summarized version of a NeurologyFormTotals object which can be used to be displayed in an interface or be stored in a database.
+            The values in the summary return will have ranges instead of lists of values.
+            </summary>
+            <param name="totals">The form totals object to be used to generate the summary.</param>
+            <returns>
+            Summarized version of the totals where the enumerations get replaced by ranges.
+            </returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.GetTotalsFor(Rhi.Isncsci.Core.NeurologyForm)">
+            <summary>
+            Returns the results produced by the ISNCSCI Algorithm ir a raw values format.
+            </summary>
+            <param name="neurologyForm">Neurology form that has been populated with the values to be used in the algorithm calculations.</param>
+            <returns>
+            Totals in raw values format.  The results contain lists with every prossible value for each field.
+            You can use the resulting object to obtained a summarized version, which uses ranges, by passing the result to the method GetTotalsSummaryFor
+            </returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.GetSummaryStringFor(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Formats a total value depending on the specified flags.
+            </summary>
+            <param name="total">Raw total value.</param>
+            <param name="hasImpairmentNotDueToSci">Flag indicating if any value used in the calculation of this total presents impairment not due to a spinal cord injury.</param>
+            <param name="containsNt">Flag indicating if any value used in the calculation of this total is set to Not Testable.</param>
+            <returns>
+            The value, followed by an exclamation mark if the hasImpairmentNotDueToSci is set to true
+            or
+            UTD (Unable to determine) if the containsNt flag is set to true.
+            </returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.GetLevelsRange(System.Collections.Generic.List{Rhi.Isncsci.Core.NeurologyFormLevel},System.Boolean)">
+            <summary>
+            Returns a range string based on the specified list.
+            </summary>
+            <param name="levels">Neurological levels returned in a calculation.</param>
+            <param name="addNa">Used in the Zone of Partial Preservation to indicate that one of the possible Asia Impairment Scale values is &quot;A&quot;</param>
+            <returns>A representation of the list as a range string.  E.g. NA,C4-C6,T1,T2</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Rhi.Isncsci.Core.Algorithm.CompareNeurologyFormTotalsLevelByOrdinal(Rhi.Isncsci.Core.NeurologyFormLevel,Rhi.Isncsci.Core.NeurologyFormLevel)" -->
+        <member name="M:Rhi.Isncsci.Core.Algorithm.UpdateTotalsWithLevelAt(Rhi.Isncsci.Core.NeurologyForm,Rhi.Isncsci.Core.NeurologyFormTotals,Rhi.Isncsci.Core.NeurologyFormLevel,System.Boolean,System.Boolean)">
+            <summary>
+            Recursive method which iterates through the values in a nuerology form while it updates the totals generating the results produced by the algorithm.
+            </summary>
+            <param name="neurologyForm">Form being evaluated.</param>
+            <param name="totals">Brand new totals object where the results are to be stored.</param>
+            <param name="level">Current neurology level being evaluated</param>
+            <param name="nextNonKeyMuscleShouldBeRightMotor">Flag used to evaluate the Kathy Collins condition on the right motor results.</param>
+            <param name="nextNonKeyMuscleShouldBeLeftMotor">Flag used to evaluate the Kathy Collins condition on the left motor results.</param>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.CouldNotHaveMotorFunctionMoreThan3LevelsBelowMotorLevel(Rhi.Isncsci.Core.NeurologyForm,Rhi.Isncsci.Core.NeurologyFormTotals)">
+            <summary>
+            Evaluates the specified form and totals to determine if any of the different
+            return conditions could produce a case where there could be motor function more
+            than 3 levels below the injury level.
+            </summary>
+            <param name="neurologyForm">Form that was used to produce the totals.</param>
+            <param name="totals">Totals retunred by the algorithm.</param>
+            <returns>Flag indicating if any combination in the totals could have a case with motor function more than 3 levels below the injury level.</returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.Algorithm.CouldBeAsiaCorD(Rhi.Isncsci.Core.NeurologyForm,Rhi.Isncsci.Core.NeurologyFormTotals,System.Boolean@,System.Boolean@)">
+            <summary>
+            Evaluates the specified form and totals to determine if any of the different
+            return conditions could produce a case where the Asia Impairment Scale is C o D.
+            </summary>
+            <param name="neurologyForm">Form that was used to produce the totals.</param>
+            <param name="totals">Totals retunred by the algorithm.</param>
+            <param name="couldBeAsiaC">out variable use as flag indicating if this case is a possible ASIA C.</param>
+            <param name="couldBeAsiaD">out variable use as flag indicating if this case is a possible ASIA D.</param>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.NeurologyForm.GetLevelAt(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns>Neurology level at the specified index.</returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.NeurologyForm.GetLevelWithName(System.String)">
+            <summary>
+            Returns the neurology level based on a level name.  E.g. C2,C3,C4...S1,S2,S3,S4_5
+            </summary>
+            <param name="levelName">Lavel name being searched.</param>
+            <returns>Neurology level that matches the specified level name.</returns>
+        </member>
+        <member name="M:Rhi.Isncsci.Core.NeurologyForm.UpdateLevelAt(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Updates the values of the neurology level with the specified name.
+            You can pass strings containing values between 0-2 for touch and prick and 0-5 for motor.
+            You can also use the exclamation mark and asterisk at the end of the string to indicate impairment not due to a spinal cord injury.
+            Finally, you can also pass NT to indicate that a value was not testable.
+            </summary>
+            <param name="levelName">Name of the respective neurology level.</param>
+            <param name="rightTouchName">Right touch</param>
+            <param name="leftTouchName">Left touch</param>
+            <param name="rightPrickName">Right Prick</param>
+            <param name="leftPrickName">Left prick</param>
+            <param name="rightMotorName">Right motor</param>
+            <param name="leftMotorName">Left motor</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
